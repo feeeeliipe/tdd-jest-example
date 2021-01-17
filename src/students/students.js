@@ -8,7 +8,7 @@ class Student {
 
     // Faz a soma das notas
     let sum = notes.reduce((result, note) => {
-      result += note;
+      result += note >= 9 ? note * 2 : note;
       return result;
     }, 0);
 

@@ -15,4 +15,9 @@ describe("Testes referente ao modulo de alunos", () => {
     const notes = [5, 2, 3, 5, 2, 1];
     expect(student.sumNotes(notes)).toEqual(36);
   });
+
+  it("Deve mutiplicar a nota, caso a nota seja maior ou igual a 9", () => {
+    const notes = [3, 5, 9];
+    expect(student.sumNotes(notes)).toEqual(26);
+  });
 });
